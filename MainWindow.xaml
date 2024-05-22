@@ -1,0 +1,20 @@
+﻿<Window x:Class="MorseT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MorseT"
+        mc:Ignorable="d"
+        Title="MorseT" Height="286" Width="495" Closing="Window_Closing" MinHeight="286" MinWidth="495" FontFamily="Courier New" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Grid Background="Black" Margin="0,0,0,1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="98*"/>
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="wordTextOutput" Margin="10,10,10,14" TextWrapping="Wrap" IsEnabled="False" Background="Black" BorderBrush="#FF06FF1D" FontFamily="Courier New" FontSize="20" Foreground="#FF06FF1D"/>
+        <TextBox x:Name="morseTextOutput" Margin="10,15,10,10" TextWrapping="Wrap" IsEnabled="False" Background="Black" BorderBrush="#FF06FF1D" FontFamily="Courier New" FontSize="20" Foreground="#FF06FF1D" Grid.Row="1"/>
+        <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" Margin="10,0,0,10" Width="75" Grid.Row="2" Background="Black" Foreground="#FF06FF1D" BorderBrush="#FF06FF1D" FontSize="16" Click="clearButton_Click" Height="29" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>
